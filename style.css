@@ -1,94 +1,151 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6fa;
   margin: 0;
   padding: 0;
+  color: #222;
 }
 
 .container {
-  width: 800px;
-  margin: auto;
+  width: 900px;
+  margin: 40px auto 0 auto;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
 }
 
 .top-area {
-  background-color: #333;
-  padding: 20px;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  padding: 28px 32px;
   color: #fff;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .top-area .logo-area .logo-text {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .top-area .menu-area .menu-item {
   display: inline-block;
-  margin-left: 15px;
+  margin-left: 24px;
   cursor: pointer;
+  font-size: 16px;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: background 0.18s, color 0.18s;
+}
+.top-area .menu-area .menu-item:hover {
+  background: #fff;
+  color: #232526;
 }
 
 .main-area {
   display: flex;
-  padding: 20px;
+  padding: 32px 32px 24px 32px;
+  gap: 32px;
+  background: #f4f6fa;
 }
 
 .main-area .content-area {
   width: 70%;
-  padding-right: 10px;
+  padding-right: 0;
 }
 
 .main-area .content-area .post-wrapper {
   background-color: #fff;
-  border: 1px solid #ddd;
-  padding: 10px;
+  border: 1px solid #e3e7ee;
+  padding: 22px 22px 18px 22px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.18s;
+}
+.main-area .content-area .post-wrapper:hover {
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
 }
 
-.main-area .content-area .post-wrapper .post-image-wrapper img {
+.post-wrapper .post-image-wrapper img {
   width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
-.main-area .content-area .post-wrapper .post-text-area .post-heading {
-  font-size: 20px;
-  margin: 10px 0 5px;
+.post-wrapper .post-text-area .post-heading {
+  font-size: 22px;
+  margin: 18px 0 8px;
+  font-weight: 600;
+  color: #232526;
 }
 
-.main-area .content-area .post-wrapper .post-text-area .post-subtext {
-  font-size: 14px;
-  color: #555;
+.post-wrapper .post-text-area .post-subtext {
+  font-size: 15px;
+  color: #5a5a5a;
+  margin-bottom: 8px;
 }
 
-.main-area .content-area .post-wrapper .post-text-area .button-area .button {
+.post-wrapper .post-text-area .button-area .button {
   display: inline-block;
-  background-color: #007BFF;
+  background: linear-gradient(90deg, #007bff 0%, #00c6ff 100%);
   color: #fff;
-  padding: 5px 10px;
+  padding: 8px 22px;
   cursor: pointer;
-  margin-top: 10px;
+  margin-top: 12px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.08);
+  transition: background 0.18s, box-shadow 0.18s;
+  border: none;
+}
+.post-wrapper .post-text-area .button-area .button:hover {
+  background: linear-gradient(90deg, #0056b3 0%, #007bff 100%);
+  box-shadow: 0 4px 16px rgba(0, 123, 255, 0.16);
 }
 
 .main-area .sidebar-area {
   width: 30%;
-  padding-left: 10px;
-  background-color: #eee;
+  padding-left: 0;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  padding: 18px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .sidebar-area .sidebar-widget .sidebar-title {
   font-weight: bold;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
+  font-size: 17px;
+  color: #007bff;
+  letter-spacing: 0.5px;
 }
 
 .sidebar-area .sidebar-widget .sidebar-item {
-  font-size: 14px;
-  margin-bottom: 5px;
+  font-size: 15px;
+  margin-bottom: 8px;
   cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 5px;
+  transition: background 0.16s, color 0.16s;
+}
+.sidebar-area .sidebar-widget .sidebar-item:hover {
+  background: #e3e7ee;
+  color: #007bff;
 }
 
 .bottom-area {
   text-align: center;
-  background-color: #333;
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
   color: #fff;
-  padding: 15px;
-  font-size: 14px;
+  padding: 18px;
+  font-size: 15px;
+  border-radius: 0 0 14px 14px;
+  letter-spacing: 0.5px;
 }
