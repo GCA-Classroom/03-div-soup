@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.top-area {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-area .logo-area .logo-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.top-area .menu-area .menu-item {
+  display: inline-block;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.main-area {
+  display: flex;
+  padding: 20px;
+}
+
+.main-area .content-area {
+  width: 70%;
+  padding-right: 10px;
+}
+
+.main-area .content-area .post-wrapper {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.main-area .content-area .post-wrapper .post-image-wrapper img {
+  width: 100%;
+}
+
+.main-area .content-area .post-wrapper .post-text-area .post-heading {
+  font-size: 20px;
+  margin: 10px 0 5px;
+}
+
+.main-area .content-area .post-wrapper .post-text-area .post-subtext {
+  font-size: 14px;
+  color: #555;
+}
+
+.main-area .content-area .post-wrapper .post-text-area .button-area .button {
+  display: inline-block;
+  background-color: #007BFF;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.main-area .sidebar-area {
+  width: 30%;
+  padding-left: 10px;
+  background-color: #eee;
+}
+
+.sidebar-area .sidebar-widget .sidebar-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sidebar-area .sidebar-widget .sidebar-item {
+  font-size: 14px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.bottom-area {
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  padding: 15px;
+  font-size: 14px;
+}
